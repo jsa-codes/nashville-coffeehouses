@@ -3,6 +3,7 @@ body {
     margin: 0;
     background-color: #ebc280;
     /* background-image: url("https://www.medicaldaily.com/sites/medicaldaily.com/files/2017/01/17/coffee.jpg"); */
+    /* Coffee Beans Background Image */
     background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.istockphoto.com%2Fvectors%2Fseamless-coffee-beans-pattern-vector-id538478401%3Fk%3D6%26m%3D538478401%26s%3D170667a%26w%3D0%26h%3D_dhBGLvlP_EQVJzXXK3tRV70AqD6po-Sa-Xk9veEvuk%3D&f=1&nofb=1");
     
 }
@@ -80,7 +81,13 @@ a:hover {
 }
 
 /****** LIST OF SHOPS *******/
-.list {
+
+.grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+/* .list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -100,7 +107,7 @@ a:hover {
 .list a:hover {
     
     color:azure;
-}
+} */
 
 .shop {
     flex-basis: 16%;
